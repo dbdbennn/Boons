@@ -166,6 +166,16 @@ footer {
 }
  /* moblie */
  @media screen and (max-width: 780px){
+    section {
+        padding-bottom: 0rem;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+    #wrapper {
+        padding-bottom: 5em;
+    }
     body{
         background-position: 95% 10rem;
         background-size: 65%;
@@ -194,9 +204,7 @@ footer {
     }
 
     .swiper-container {
-        display: block;
-        height: 300px;
-        margin-top: 2rem;
+        display: none;
      }
      .swiper-slide {
         display: none;
@@ -204,37 +212,24 @@ footer {
      .swiper-button-next, .swiper-button-prev, .swiper-pagination{
         display: none;
      }
-     .swiper-slide img {
-        box-shadow:0 0 5px #555;
-        border-radius: 2.5rem;
-        max-width: 70%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
-        /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
-     }
-    
-     .mobile-container{
-        display: block;
+
+     .mobile-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8rem;
      }
 
      .mobile-slide1 img {
-        width: 230px;
-        height: 230px;
-        margin-top: 5%;
-        column-gap: 1rem;
-        float: left;
         border-radius: 1rem;
-        margin-left: 12%;
+        width: 14rem;
+        height: 14rem;
      }
 
-     .mobile-slide2 img {
-        width: 230px;
-        height: 230px;
-        margin-top: 10%;
-        column-gap: 1rem;
-        float: left;
-        border-radius: 1rem;
-        margin-left: 12%;
-     }
-      .mobile-wrapper{
-        display:block;
+     .mobile-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+        padding: 2rem;
      }
  }
