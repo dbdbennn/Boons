@@ -162,8 +162,13 @@ footer {
     text-decoration: none;
 }
 
+/* tablet */
+@media screen and (max-width: 768px) {
+    
+}
+
  /* moblie */
- @media screen and (max-width: 780px){
+ @media screen and (max-width: 480px){
     section {
         padding-bottom: 0rem;
     }
@@ -255,15 +260,15 @@ footer {
 
      .mobile-slide1 img {
         border-radius: 1rem;
-        width: 14.5rem;
-        height: 14.5rem;
+        width: 11rem;
+        height: 11rem;
      }
 
      .mobile-wrapper{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 4rem;
+        gap: 2rem;
         padding: 2rem;
      }
 
