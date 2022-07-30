@@ -1,7 +1,7 @@
 /* 기본 설정 */
 :root{
-    --back-color: hsl(216, 100%, 80%);
-    --main-textcolor: hsl(0, 0%, 11%);
+    --back-color: hsl(217, 100%, 91%);
+    --main-textcolor: hsl(0, 0%, 20%);
 }
 /* 기본 바디 컬러 */
 body {
@@ -16,6 +16,15 @@ body {
 }
   
 /* 플라스틱 설명, 이미지 */
+#wrapper {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 11rem;
+}
+section{
+    padding-bottom: 11rem;
+}
+
 .title{
     display: flex;
 }
@@ -81,11 +90,12 @@ h2 {
 
 /* header */
 header {
-    background-color: hsl(216, 100%, 68%);
+    background-color: hsl(217, 74%, 76%);
+    box-shadow: 4px 4px 10px hsla(0, 0%, 0%, 0.106);
 }
   
 nav {
-  height: 3rem;
+  height: 4rem;
   display: flex; /* 기본값: 수평 방향 */
   justify-content: center; /* 양쪽정렬 */
   align-items: center; /* 교차축 가운데 */
@@ -129,6 +139,45 @@ nav i {
 .mobile-wrapper{
     display: none;
 }
+/* footer */
+footer {
+    width:100%;
+    height: 11rem;
+    transform: translatY(-100%);
+    position: relative;
+    background-color: rgba(198, 198, 198, 0.834);
+    padding: 2rem;
+ }
+ 
+.foots{
+    display: flex;
+    justify-content: center;
+ }
+.snsItems{
+    font-size:2rem;
+    text-decoration: none;
+    color: #555;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.last-snsItems{
+    font-size:2rem;
+    text-decoration: none;
+    color: #555;
+}
+.sns {
+    display: flex;
+    justify-content: center;   
+}
+.items {
+    color: #555;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+#last-item{
+    color: #555;
+    text-decoration: none;
+}
 
 /* moblie */
 @media screen and (max-width: 780px){
@@ -162,7 +211,7 @@ nav i {
     .swiper-container {
         display: block;
         height: 300px;
-        margin-top: 10%;
+        margin-top: 2rem;
      }
      .swiper-slide {
         display: none;
