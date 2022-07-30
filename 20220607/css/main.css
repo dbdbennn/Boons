@@ -164,6 +164,16 @@ footer {
 
  /* moblie */
  @media screen and (max-width: 780px){
+    section {
+        padding-bottom: 0rem;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+    #wrapper {
+        padding-bottom: 9em;
+    }
     body{
         background-position: 95% 10rem;
         background-size: 65%;
@@ -244,27 +254,23 @@ footer {
      }
 
      .mobile-container {
-        display: block;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8rem;
      }
 
      .mobile-slide1 img {
-        width: 250px;
-        height: 250px;
-        margin-top: 20%;
-        column-gap: 1rem;
-        float: left;
         border-radius: 1rem;
-        margin-left: 10%;
+        width: 14rem;
+        height: 14rem;
      }
 
-     .mobile-slide2 img {
-        width: 250px;
-        height: 250px;
-        margin-top: 20%;
-        column-gap: 1rem;
-        float: left;
-        border-radius: 1rem;
-        margin-left: 10%;
+     .mobile-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+        padding: 2rem;
      }
 
  }
